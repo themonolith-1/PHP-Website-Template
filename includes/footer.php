@@ -10,5 +10,6 @@
       <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fa-brands fa-linkedin"></i></a>
     </div>
   </footer>
+  <?php include __DIR__ . '/../chatbot.php'; ?>
 </body>
 </html>
