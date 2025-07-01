@@ -101,8 +101,6 @@ php-web/
 └── README.md
 ```
 
-## Troubleshooting
-
 ### "php : The term 'php' is not recognized..." error
 
 This means PHP is not installed or not added to your system's PATH.
