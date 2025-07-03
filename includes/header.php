@@ -23,7 +23,10 @@
       ?>
       <div class="nav-links">
         <a href="index.php" class="<?= $current == 'index.php' ? 'active' : '' ?>"><i class="fa-solid fa-house icon"></i>Home</a>
+        <a href="features.php" class="<?= $current == 'features.php' ? 'active' : '' ?>"><i class="fa-solid fa-layer-group icon"></i>Features</a>
+        <a href="pricing.php" class="<?= $current == 'pricing.php' ? 'active' : '' ?>"><i class="fa-solid fa-tags icon"></i>Pricing</a>
         <a href="about.php" class="<?= $current == 'about.php' ? 'active' : '' ?>"><i class="fa-solid fa-circle-info icon"></i>About</a>
+        <a href="contact.php" class="<?= $current == 'contact.php' ? 'active' : '' ?>"><i class="fa-solid fa-envelope icon"></i>Contact</a>
         <a href="login.php" class="<?= $current == 'login.php' ? 'active' : '' ?>"><i class="fa-solid fa-right-to-bracket icon"></i>Login</a>
         <a href="register.php" class="<?= $current == 'register.php' ? 'active' : '' ?>"><i class="fa-solid fa-user-plus icon"></i>Register</a>
       </div>

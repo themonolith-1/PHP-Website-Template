@@ -366,14 +366,127 @@ header {
   font-size: 1.08rem;
 }
 
-@media (max-width: 600px) {
-  #chatbot-form {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  #chatbot-input {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-  }
+.pricing-table {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.pricing-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.10);
+  padding: 2rem 1.5rem;
+  min-width: 240px;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #eaf6fb;
+  position: relative;
+}
+.pricing-card.featured {
+  border: 2.5px solid var(--accent);
+  background: #eaf6fb;
+  transform: scale(1.04);
+}
+.pricing-card h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+.pricing-price {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin: 1rem 0 0.7rem 0;
+  font-weight: bold;
+}
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem 0;
+  color: var(--primary);
+  font-size: 1.05rem;
+}
+.pricing-features li {
+  margin-bottom: 0.7rem;
+}
+.pricing-card .cta {
+  margin-top: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+
+.testimonials {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  padding: 1.5rem 1.2rem;
+  max-width: 320px;
+  min-width: 220px;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+}
+.testimonial-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+.testimonial-author {
+  margin-top: 1rem;
+  color: var(--gray);
+  font-size: 0.98rem;
+  font-style: normal;
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 700px;
+  padding-left: 20px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.timeline-event {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+}
+.timeline-event:last-child {
+  margin-bottom: 0;
+}
+.timeline-event .timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 0.2rem;
+  width: 18px;
+  height: 18px;
+  background: var(--white);
+  border: 4px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+}
+.timeline-event h4 {
+  margin: 0 0 0.3rem 0;
+  color: var(--accent);
+}
+.timeline-event p {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.05rem;
 }
