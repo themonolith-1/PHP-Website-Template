@@ -80,6 +80,27 @@ For more details, see the [official PHP installation guide](https://www.php.net/
 - Update styles in `assets/css/style.css`.
 - Replace icons using [Font Awesome](https://fontawesome.com/icons).
 
+## Security Guarantee & Modular API Integration
+
+This template includes a modular security file at `includes/security.php`:
+
+- **Purpose:**  
+  Allows hosters to implement their own API key validation, token checks, and other security logic for custom API endpoints.
+- **How to use:**  
+  - Include `includes/security.php` in any API endpoint or sensitive script.
+  - Customize the provided functions (e.g., `validate_api_key`, `require_api_key`) to fit your security requirements.
+  - Example usage in an API endpoint:
+    ```php
+    require_once __DIR__ . '/includes/security.php';
+    require_api_key(); // Will block access if API key is invalid
+    // ...your API logic...
+    ```
+- **Extendable:**  
+  Add your own security checks (IP whitelisting, rate limiting, etc.) in `includes/security.php`.
+
+**Note:**  
+By default, the API key list is empty. Hosters must add their own keys and logic for production use.
+
 ## File Structure
 
 ```
