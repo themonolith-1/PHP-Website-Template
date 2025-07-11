@@ -16,7 +16,7 @@ A professional, clean PHP website template with placeholder pages and icons.
    - Clone or download this repository.
    - Place the folder in your web server's root directory.
 3. **Usage:**  
-   - Open your browser and navigate to `http://localhost/php-web/` (adjust path as needed).
+   - Open your browser and navigate to `http://localhost/php-web/` (replace `php-web` with your folder name if different).
 
 ## Quick Start: Running Locally
 
@@ -79,6 +79,13 @@ For more details, see the [official PHP installation guide](https://www.php.net/
 - Edit the PHP files in the root directory to add your content.
 - Update styles in `assets/css/style.css`.
 - Replace icons using [Font Awesome](https://fontawesome.com/icons).
+
+## Preferences & Cookie Consent
+
+This template manages user preferences (currently only cookie consent) via a popup in `includes/footer.php`.  
+When a user accepts cookies, a cookie named `cookies_accepted` is set for 365 days.  
+On future visits, the popup is hidden if the cookie is present.  
+To add more preferences, extend the popup and update the JavaScript logic in `footer.php`.
 
 ## Security Guarantee & Modular API Integration
 
