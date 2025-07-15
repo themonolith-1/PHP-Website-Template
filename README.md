@@ -1,4 +1,4 @@
-# PHP Website Template
+# PHP Website Template 
 
 A professional, clean PHP website template with placeholder pages and icons.
 
@@ -8,6 +8,8 @@ A professional, clean PHP website template with placeholder pages and icons.
 - Responsive, modern design
 - Font Awesome icons
 - Modular header/footer includes
+- Chatbot system with predefied messages
+- API integration
 
 ## Setup
 
