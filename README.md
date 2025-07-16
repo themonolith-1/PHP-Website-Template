@@ -8,7 +8,7 @@ A professional, clean PHP website template with placeholder pages and icons.
 - Responsive, modern design
 - Font Awesome icons
 - Modular header/footer includes
-- Chatbot system with predefied messages
+- Chatbot system with predefied messages (editable)
 - API integration
 
 ## Setup
